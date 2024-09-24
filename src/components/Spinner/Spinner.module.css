@@ -7,7 +7,7 @@
 .wrepperName{
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 50px;
     font-family: 'PT Sans', sans-serif;
     font-size: 1.5vw;
 }
@@ -15,7 +15,7 @@
     width: 5px;
     height: 100%;
     position: absolute;
-    left: -20px;
+    left: -50px;
     top: 0;
     background: linear-gradient(to bottom, #3877EE, #EF5DA8);
 }
@@ -93,6 +93,7 @@
 }
 .wrapperBtnNumLeft, .wrapperBtnNumRight{
     width: 40%;
+    max-width: 55px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     font-size: 25px;
@@ -259,7 +260,7 @@
 }
 
 
-@media (max-height: 700px) {
+@media (max-height: 900px) {
     .pointNumVis{
         font-size: 5vh;
     }

@@ -38,15 +38,4 @@
     }
 }
 
-@media (max-width: 768px) {
-    .wtapper{
-        scroll-snap-align: start;
-    }
-}
 
-/* @media (max-width: 600px) {
-    .wtapper{
-        margin-right: 20px;
-        flex: 0 0 auto;
-    }
-} */
