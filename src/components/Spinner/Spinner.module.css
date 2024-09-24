@@ -68,8 +68,8 @@
 
 .wrapperBtn{
     width: 10%;
+    max-width: 140px;
     min-width: 120px;
-    max-width: 170px;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -207,7 +207,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 250%;
+    left: 300%;
     font-size: 3.5vh;
     opacity: 1;
     transition-duration: 500ms;
@@ -253,16 +253,12 @@
 
 
 
-@media (max-width: 1000px) {
-    .pointName{
-        left: 350%;
-    }
-}
+
 
 
 @media (max-height: 900px) {
     .pointNumVis{
-        font-size: 5vh;
+        font-size: 4vh;
     }
 }
 
