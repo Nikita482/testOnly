@@ -1,0 +1,52 @@
+.wtapper{
+    width: 28%;
+    height: 100%;
+    margin-right: 20px;
+    flex: 0 0 auto;
+}
+
+.wtapperData{
+    color: #3877EE;
+    padding: 10px 10px 0 10px;
+    font-size: 35px;    
+    font-family: 'PT Sans', sans-serif;
+}
+
+.wtapperText{
+    color: #42567A;
+    padding: 10px;
+    font-size: 18px;    
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+@media (max-width: 1300px) {
+    .wtapper{
+        width: 30%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .wtapper{
+        width: 40%;
+    }
+}
+
+@media (max-width: 900px) {
+    .wtapper{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wtapper{
+        scroll-snap-align: start;
+    }
+}
+
+/* @media (max-width: 600px) {
+    .wtapper{
+        margin-right: 20px;
+        flex: 0 0 auto;
+    }
+} */

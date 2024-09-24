@@ -1,0 +1,569 @@
+.wrapper{
+    width: 100%;
+    height: 55%;
+    position: relative;
+    display: flex;
+}
+.wrepperName{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5vw;
+}
+.wrapperGrad{
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    background: linear-gradient(to bottom, #3877EE, #EF5DA8);
+}
+.wrapperWidht, .wrapperWidhtNot{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #42567A;
+    position: absolute;
+    opacity: 1;
+    transition-duration: 500ms;
+}
+.wrapperWidhtNot{
+    opacity: 0;
+}
+ .wrappweMarginTop{
+    width: 100%;
+    height: 15%;
+ }
+ 
+.wrapperData{
+    display: flex;
+}
+.wrapperDataL, .wrapperDataR{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
+}
+.dataText1, .dataText2, .dataText3, .dataText4, .dataText5, .dataText6{
+    display: none;
+}
+.wrapperDataR{
+    left: 50%;
+    justify-content: start;
+}
+.wrapperDataL h1, .wrapperDataR h1{
+    margin-right: 30px;
+    pointer-events: none;
+    color: #664ffa;
+}
+.wrapperDataR h1{
+    margin-left: 30px;
+    color: rgb(251, 111, 158);
+}
+
+.wrapperBtn{
+    width: 10%;
+    min-width: 120px;
+    max-width: 170px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+.wrapperNumber{
+    width: 100%;
+    height: auto;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.wrapperBtnNum{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapperBtnNumLeft, .wrapperBtnNumRight{
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    color: #42567A;
+    border: 1px solid #42567A;
+    background-color: white;
+}
+
+
+.spinner{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #42567A;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    transition-duration: 1s;
+}
+
+.boxPoint{
+    width: 15%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+.boxPoint:nth-child(1){
+    transform: translate(-50%, -50%) rotate(0deg);
+    left: 100%;
+}
+.boxPoint:nth-child(2){
+    transform: translate(-50%, -50%) rotate(60deg);
+    left: 75%;
+    top: 93.5%;
+}
+.boxPoint:nth-child(3){
+    transform: translate(-50%, -50%) rotate(120deg);
+    left: 25%;
+    top: 93.5%;
+}
+.boxPoint:nth-child(4){
+    transform: translate(-50%, -50%) rotate(180deg);
+    left: 0;
+}
+.boxPoint:nth-child(5){
+    transform: translate(-50%, -50%) rotate(240deg);
+    left: 25%;
+    top: 6.5%;
+}
+.boxPoint:nth-child(6){
+    transform: translate(-50%, -50%) rotate(300deg);
+    left: 75%;
+    top: 6.5%;
+}
+
+.point{
+    width: 7px;
+    aspect-ratio: 1 / 1;
+    background-color: #42567A;
+    border-radius: 50%;
+    transition: width 500ms, background-color 500ms, border 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxPoint:hover .point{
+    width: 100%;
+    background-color: white;
+    border: 1px solid #42567A;
+}
+.pointVis{
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border: 1px solid #42567A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.pointNum{
+    transition-duration: 500ms;
+    font-size: 0px;
+    color: #42567A;
+    font-family: 'PT Sans', sans-serif;
+}
+.boxPoint:hover .pointNum {
+    font-size: 35px;
+}
+.pointNumVis{
+    font-size: 3vw;
+    transition-duration: 500ms;
+    color: #42567A;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+}
+.pointName, .pointNameNot{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 250%;
+    font-size: 3.5vh;
+    opacity: 1;
+    transition-duration: 500ms;
+}
+.pointNameNot{
+    opacity: 0;
+    pointer-events: none;
+    transform: rotate(-10deg);
+}
+
+
+
+.wrappweMarginBottom{
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+.wrapRibbonVis1, .wrapRibbonVis2, .wrapRibbonVis3, .wrapRibbonVis4, .wrapRibbonVis5, .wrapRibbonVis6{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transition-duration: 700ms;
+}
+
+.wrapRibbonNot1, .wrapRibbonNot2, .wrapRibbonNot3, .wrapRibbonNot4, .wrapRibbonNot5, .wrapRibbonNot6{
+    opacity: 0;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    transition-duration: 700ms;
+    pointer-events: none;
+}
+.pointMobule{
+    display: none;
+}
+.pointMobule1, .pointMobule2, .pointMobule3, .pointMobule4, .pointMobule5, .pointMobule6, .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6, .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6, .dataText1, .dataText2, .dataText3, .dataText4, .dataText5, .dataText6{
+    display: none;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .pointName{
+        left: 350%;
+    }
+}
+
+
+@media (max-height: 700px) {
+    .pointNumVis{
+        font-size: 5vh;
+    }
+}
+
+@media (max-height: 650px) {
+    .dataNum{
+        font-size: 10vw;
+    }
+    .wrapRibbonVis1, .wrapRibbonVis2, .wrapRibbonVis3, .wrapRibbonVis4, .wrapRibbonVis5, .wrapRibbonVis6{
+        height: 100%;
+    }
+}
+
+@media (max-height: 550px) {
+    .dataNum{
+        font-size: 7vw;
+    }
+    .wrappweMarginTop{
+        height: 10%;
+     }
+     .wrapper{
+        height: 60%;
+    }
+}
+
+@media (max-height: 460px) {
+    .wrappweMarginTop{
+        height: 5%;
+     }
+     .wrapper{
+        height: 55%;
+    }
+
+    .wrappweMarginBottom{
+        height: 40%;
+    }
+    .dataNum{
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    .dataNum{
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 1150px) {
+    .dataNum{
+        font-size: 14vw;
+    }
+}
+
+
+@media (max-height: 550px) {
+    .dataNum{
+        font-size: 13vw;
+    }
+}
+
+@media (max-height: 480px) {
+    .dataNum{
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .spinner{
+        display: none;
+    }
+    .wrapperWidht{
+        height: 55%;
+    }
+    .wrapperGrad{
+        display: none;
+    }
+    .wrepperName{
+        font-size: 2.5vw;
+    }
+    .dataText1, .dataText2, .dataText3, .dataText4, .dataText5, .dataText6, .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6{
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: absolute;
+        bottom: 50px;
+        font-size: 5vw;
+        opacity: 1;
+        transition-duration: 500ms;
+    }
+    .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6{
+        opacity: 0;
+    }
+    
+     .wrappweMarginTop{
+        display: none;
+     }
+     .wrapper{
+        height: 98%;
+    }
+    .wrapperDataL, .wrapperDataR{
+        height: 60%;
+        align-items: center;
+    }
+    .wrapperBtn{
+        width: 10%;
+        min-width: 120px;
+        max-width: 170px;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+        left: 50px;
+    }
+    .wrappweMarginBottom{
+        position: absolute;
+        bottom: 100px;
+    }
+    .dataTextL{
+        bottom: 50px;
+    }
+    .wrapperBtn{
+        left: 0px;
+    }
+    .pointMobule{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 50px;
+    }
+    .pointMobule1, .pointMobule2, .pointMobule3, .pointMobule4, .pointMobule5, .pointMobule6, .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6{
+        width: 1.5vw;
+        aspect-ratio: 1 / 1;
+        background-color: #034bd1;
+        display: flex;
+        border-radius: 50%;
+        transition: 500ms;
+    }
+    .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6{
+        background-color: #42567A;
+    }
+    .wrepperName{
+        left: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pointMobule{
+        left: 60%;
+    }
+    .wrapperWidht{
+        height: 50%;
+    }
+    .wrapperDataL, .wrapperDataR{
+        height: 55%;
+        align-items: center;
+    }
+    .wrappweMarginBottom{
+        height: 40%;
+    }
+    .dataNum{
+        font-size: 17vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrepperName{
+        font-size: 3vw;
+    } 
+    .dataText1, .dataText2, .dataText3, .dataText4, .dataText5, .dataText6, .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6{
+        font-size: 6.5vw;
+    }
+    .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6{
+        opacity: 0;
+    }
+    .dataNum{
+        font-size: 19vw;
+    }
+    .pointMobule{
+        left: 70%;
+        width: 200px;
+    }
+    .pointMobule1, .pointMobule2, .pointMobule3, .pointMobule4, .pointMobule5, .pointMobule6, .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6{
+        width: 2vw;
+    }
+    .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6{
+        background-color: #42567A;
+    }
+}
+
+@media (max-width: 400px) {
+    .pointMobule1, .pointMobule2, .pointMobule3, .pointMobule4, .pointMobule5, .pointMobule6, .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6{
+        width: 2.3vw;
+    }
+    .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6{
+        background-color: #42567A;
+    }
+    .wrappweMarginBottom{
+        height: 50%;
+    }
+    .wrapperWidht{
+        height: 45%;
+    }
+    .wrapperDataL, .wrapperDataR{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .dataText1, .dataText2, .dataText3, .dataText4, .dataText5, .dataText6, .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6{
+        font-size: 7vw;
+    }
+    .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6{
+        opacity: 0;
+    }
+    .wrepperName{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 370px) {
+    .pointMobule{
+        width: 50%;
+    }  
+}
+
+@media (max-width: 330px) {
+    .pointMobule{
+        left: 80%;
+        width: 40%;
+    }  
+    .pointMobule1, .pointMobule2, .pointMobule3, .pointMobule4, .pointMobule5, .pointMobule6, .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6{
+        width: 8px;
+    }
+    .pointMobuleNot1, .pointMobuleNot2,.pointMobuleNot3, .pointMobuleNot4, .pointMobuleNot5, .pointMobuleNot6{
+        background-color: #42567A;
+    }
+}
+
+@media (max-width: 310px) {
+    .dataText1, .dataText2, .dataText3, .dataText4, .dataText5, .dataText6, .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6{
+        font-size: 9vw;
+    }
+    .dataTextNot1, .dataTextNot2, .dataTextNot3, .dataTextNot4, .dataTextNot5, .dataTextNot6{
+        opacity: 0;
+    }
+    .wrepperName{
+        font-size: 5vw;
+    }
+}
+
+@media (max-height: 650px) {
+    .wrapRibbonVis1, .wrapRibbonVis2, .wrapRibbonVis3, .wrapRibbonVis4, .wrapRibbonVis5, .wrapRibbonVis6{
+        height: 80%;
+    }
+}
+
+@media (max-height: 550px) {
+    .wrapRibbonVis1, .wrapRibbonVis2, .wrapRibbonVis3, .wrapRibbonVis4, .wrapRibbonVis5, .wrapRibbonVis6{
+        height: 70%;
+    }
+    .wrepperName{
+        font-size: 3vw;
+    }
+    .dataNum{
+        font-size: 17vw;
+    }
+}
+
+@media (max-height: 460px) {
+    .dataText1, .dataText2, .dataText3, .dataText4, .dataText5, .dataText6{
+        font-size: 7vw;
+        bottom: 10px;
+    }
+    .wrepperName{
+        display: flex;
+    }
+    .wrepperNameMargin{
+        margin-left: 10px;
+    }
+    .wrapperDataL, .wrapperDataR{
+        height: 40%;
+    }
+    .wrapperWidht{
+        height: 40%;
+    }
+}
+
+@media (max-height: 400px) {
+    .dataText1, .dataText2, .dataText3, .dataText4, .dataText5, .dataText6{
+        font-size: 7vw;
+        bottom: 10px;
+    }
+    .wrepperName{
+        display: flex;
+        top: 10px;
+    }
+    .wrapperDataL, .wrapperDataR{
+        height: 40%;
+    }
+    .wrapperWidht{
+        height: 40%;
+    }
+}

@@ -1,0 +1,41 @@
+.wrapper{
+    display: flex;
+    height: 100vh;
+}
+.wrapperBox{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border-left: 1px solid #42567A;
+    border-right: 1px solid #42567A;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+}
+
+/* .borderWidth{
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    border-bottom: 1px solid #42567A;
+} */
+.borderHeight{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    pointer-events: none;
+    border-right: 1px solid #42567A;
+}
+
+@media (max-width: 768px) {
+    .borderHeight{
+        display: none;
+    }
+    .wrapperBox{
+        border: none;
+    }
+}
