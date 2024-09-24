@@ -118,7 +118,7 @@
 }
 
 .boxPoint{
-    width: 15%;
+    width: 20%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     position: absolute;
@@ -175,7 +175,7 @@
     border: 1px solid #42567A;
 }
 .pointVis{
-    width: 70px;
+    width: 90px;
     aspect-ratio: 1 / 1;
     background-color: white;
     border: 1px solid #42567A;
@@ -184,6 +184,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 
 
@@ -254,7 +255,14 @@
 
 
 
-
+@media (max-height: 820px) {
+    .pointVis{
+        width: 70px;
+    }
+    .boxPoint{
+        width: 15%;
+    }
+}
 
 @media (max-height: 900px) {
     .pointNumVis{
@@ -522,7 +530,7 @@
         height: 70%;
     }
     .wrepperName{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .dataNum{
         font-size: 17vw;
