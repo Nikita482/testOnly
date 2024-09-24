@@ -195,7 +195,7 @@
     font-family: 'PT Sans', sans-serif;
 }
 .boxPoint:hover .pointNum {
-    font-size: 35px;
+    font-size: 40px;
 }
 .pointNumVis{
     font-size: 3vw;
@@ -261,6 +261,9 @@
     }
     .boxPoint{
         width: 15%;
+    }
+    .boxPoint:hover .pointNum {
+        font-size: 35px;
     }
 }
 
